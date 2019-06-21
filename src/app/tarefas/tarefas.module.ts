@@ -5,19 +5,21 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ListarTarefaComponent } from './listar/listar-tarefa.component';
 import { CadastrarComponent } from './cadastrar/cadastrar.component';
+import { EditarComponent } from './editar/editar.component';
+import { ConcluidaDirective } from './shared/concluida.directive';
 
 @NgModule({
   declarations: [
     ListarTarefaComponent,
-    CadastrarComponent
+    CadastrarComponent,
+    EditarComponent,
+    ConcluidaDirective
   ],
   imports: [
     CommonModule,
     RouterModule,
     FormsModule
   ],
-  providers: [
-    TarefaService
-  ]
+  providers: []
 })
 export class TarefasModule {}
